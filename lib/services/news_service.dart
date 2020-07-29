@@ -38,7 +38,6 @@ class NewsListResult {
         headers: {HttpHeaders.authorizationHeader: "Bearer " + token});
 
     var responseJson = json.decode(response.body);
-    print(responseJson);
 
     List<News> temp = [];
 

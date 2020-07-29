@@ -34,7 +34,9 @@ class _ListViewItemState extends State<ListViewItem> {
       var temp = await NewsListResult.funcGetListNews(cursor);
       data.addAll(temp.listNews);
 
-      setState(() {});
+      setState(() {
+        cursor = temp.cursor;
+      });
     }
   }
 
